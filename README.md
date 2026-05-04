@@ -1,256 +1,127 @@
-<div align="center">
+# Asem Sharif
+**AI · Computer Vision · Edge Systems**
 
-<!-- ═══════════════════════════════════════════════════════════
-     HEADER BLOCK
-     To update: edit the name, title, or tagline below only.
-     ═══════════════════════════════════════════════════════════ -->
+Final-year AI student at the Faculty of Artificial Intelligence, Menoufia University (graduating Aug 2026).
+GPA 3.55 / 4.0 — Cyber Security track.
 
-```
-██╗  ██╗   ██╗███╗  ██╗ ██╗  ██╗
-██║  ╚██╗ ██╔╝████╗ ██║ ╚██╗██╔╝
-██║   ╚████╔╝ ██╔██╗██║  ╚███╔╝ 
-██║    ╚██╔╝  ██║╚████║  ██╔██╗ 
-███████╗██║   ██║ ╚███║ ██╔╝╚██╗
-╚══════╝╚═╝   ╚═╝  ╚══╝ ╚═╝  ╚═╝
-```
-
-### `AI · Computer Vision · Edge Systems`
-
-*Building machines that see, reason, and act — at the edge.*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-asem--sharif-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/asem-sharif)
-[![GitHub](https://img.shields.io/badge/GitHub-asem--sharif--ai-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/asem-sharif-ai)
-[![Email](https://img.shields.io/badge/Email-asem.sharif.ai%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:asem.sharif.ai@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Egypt-success?style=flat-square&logo=googlemaps&logoColor=white)](#)
-
-</div>
+I build computer vision systems that work outside the notebook — on real hardware, under real constraints.
+My focus is on the full vertical: model design, optimization, edge deployment, and the software layer that wraps it.
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 1 · ABOUT
-     To update: edit the paragraph text below.
-     Do NOT restructure the section header format.
-     ═══════════════════════════════════════════════════════════ -->
+## Technical Skills
 
-## `§01` &nbsp; About
+<!-- To add a skill: append to the relevant line. To add a category: add a new line following the same pattern. -->
 
-I'm a final-year AI student at the **Faculty of Artificial Intelligence, Menoufia University** (graduating Aug 2026), majoring in the Cyber Security track with a **GPA of 3.55 / 4.0**.
-
-My work sits at the intersection of **computer vision**, **deep learning**, and **edge deployment** — designing systems that are not just accurate in a notebook, but *reliable in the real world*, running on constrained hardware at sub-30ms latency.
-
-Beyond the models, I care deeply about **software quality**: clean architecture, maintainable codebases, and interfaces that humans actually want to use. I build full stacks — from the ONNX inference kernel to the PyQt6 GUI the operator sees.
-
-> Currently finishing **LYNX DMS** — an intelligent, edge-deployed driver monitoring system — as my graduation project with team **Vision Core**.
+**Languages** — Python, C++, Go  
+**AI / ML** — Machine Learning, Deep Learning, Neural Networks, Transformers  
+**Computer Vision** — Image Processing, CNNs, ViT, Object Detection, Tracking, Segmentation  
+**Frameworks** — PyTorch, TensorFlow, Keras, OpenCV, MediaPipe, Dlib, YOLO, Scikit-Learn, Scikit-Image, PyQt6  
+**Edge Deployment** — Raspberry Pi 5, Hailo-8L NPU, ONNX Runtime, Quantization, Pruning, Hardware Prototyping  
+**Application Development** — Desktop GUI, Event-Driven Architecture, SQLite, Clean Architecture  
+**Dev Tooling** — Git, Linux, Colab  
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 2 · SKILLS MATRIX
-     To add a new skill row: copy one <tr> block and edit it.
-     To add a new category: add a new <tr> with a bold label.
-     Do NOT change the table structure itself.
-     ═══════════════════════════════════════════════════════════ -->
+## Projects
 
-## `§02` &nbsp; Technical Skills
+<!-- ── LYNX DMS ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
+### Lynx DMS — Intelligent Edge-Deployed Driver Monitoring System
+`Graduation Project · 2026 · Vision Core Team`
 
-| Domain | Stack |
-|:---|:---|
-| **Languages** | Python · C++ · Go · OOP · Algorithm Design |
-| **AI / ML** | Machine Learning · Deep Learning · Neural Networks · Transformers · Automation |
-| **Computer Vision** | Image Processing · CNNs · ViT · Object Detection · Tracking · Segmentation |
-| **Frameworks** | PyTorch · TensorFlow · Keras · OpenCV · MediaPipe · Dlib · YOLO · Scikit-Learn · Scikit-Image · PyQt6 |
-| **Edge Deployment** | Raspberry Pi 5 · Hailo-8L NPU · ONNX Runtime · Quantization · Pruning · Hardware Prototyping |
-| **App Development** | Desktop Applications · Event-Driven Architecture · GUI Design · SQLite |
-| **Dev Tools** | Git · Linux · Colab · VS Code |
+The primary and most significant project to date. An end-to-end computer vision system for real-time driver state, behavior, and safety monitoring — engineered for production deployment on constrained edge hardware.
 
-</div>
+**Implemented subsystems:**
+- Face recognition pipeline for authorized access control and driver validation (ArcFace R50, 512-d embeddings, ONNX)
+- Fatigue and distraction detection via a continuous multi-class detection pipeline with an event-driven alert engine
+- Real-time emotion and safety analysis (EfficientNet-B0 on RAF-DB, MobileNetV3-Small for mask detection)
+- Privacy-preserving local dashboard — all processing and logging on-device (PyQt6, SQLite)
+- Structured event-flagging engine designed for integration with external hardware controllers, contact interfaces, or fleet management systems
 
----
+**Delivered:** sub-30ms inference latency, >95% accuracy on critical safety alerts, low false positive rate on a Raspberry Pi 5 + Hailo-8L NPU target.
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 3 · FEATURED PROJECT (GRADUATION)
-     To update: edit the bullet points or metrics only.
-     The card layout is fixed — do not restructure it.
-     ═══════════════════════════════════════════════════════════ -->
+**Stack:** Python, PyTorch, TensorFlow, MediaPipe, OpenCV, Scikit-Image, PyQt6, SQLite, ONNX, Raspberry Pi 5, Hailo-8L NPU
 
-## `§03` &nbsp; Featured Project
-
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║          LYNX DMS — Driver Monitoring System                 ║
-║          Intelligent · Edge-Deployed · Real-Time             ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-> An end-to-end computer vision system for real-time driver behavior analysis and vehicle safety, deployed on constrained edge hardware.
-
-**What it does:**
-- 🔐 **Face Recognition** — authorized access control and driver identity validation (ArcFace R50, 512-d embeddings)
-- 😴 **Fatigue & Distraction Detection** — continuous multi-class detection pipeline with an event-driven alert engine
-- 😊 **Emotion & Safety Analysis** — real-time driver condition assessment modules (EfficientNet-B0, MobileNetV3)
-- 🖥️ **Privacy-First Dashboard** — all processing and logging is local; PyQt6 GUI with SQLite backend
-- 🔗 **Interoperability Layer** — structured event-flagging engine for seamless integration with hardware controllers, contact interfaces, or fleet management systems
-
-**Performance:**
-
-| Metric | Value |
-|:---|:---|
-| Inference Latency | < 30 ms |
-| Critical Alert Accuracy | > 95% |
-| Target Hardware | Raspberry Pi 5 + Hailo-8L NPU |
-| Deployment Format | ONNX / Edge-Optimized |
-
-**Stack:** `Python` · `PyTorch` · `TensorFlow` · `MediaPipe` · `OpenCV` · `Scikit-Image` · `PyQt6` · `SQLite` · `ONNX` · `Raspberry Pi 5` · `Hailo-8L NPU`
-
-[![Repo](https://img.shields.io/badge/Source_Code-github.com/asem--sharif--ai/Lynx--DMS-181717?style=flat-square&logo=github)](https://github.com/asem-sharif-ai/Lynx-DMS)
-&nbsp;`[Currently Private — will open-source post-graduation]`
+`Source: github.com/asem-sharif-ai/Lynx-DMS` *(Currently private — will be opened post-graduation)*
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 4 · OTHER PROJECTS
-     To add a project: copy one project block (between ---) and
-     edit the title, description, stack, and link.
-     Each project block is self-contained.
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ── YTFetcherPlus ────────────────────────────────────────────────────────── -->
 
-## `§04` &nbsp; Other Projects
+### YTFetcherPlus — Desktop Video Downloader
+`Personal Project · Vision Core`
 
-<!-- ── Project: Undergraduate Collection ─────────────────── -->
-### 📂 Undergraduate AI & CS Portfolio
-*2022 – 2025*
+A PyQt6 desktop application for downloading video and audio from YouTube and most major video platforms, built on yt-dlp. Designed with a polished, premium-feel interface and a clean, maintainable codebase. Ships with a full custom QSS stylesheet, format selection, progress tracking, and download queue management.
 
-A curated collection of academic assignments and projects spanning programming, artificial intelligence, and desktop application development — covering topics from classical algorithms to deep learning classifiers and desktop GUI tools.
+**Stack:** Python, PyQt6, yt-dlp
 
-[![Repo](https://img.shields.io/badge/View_Repo-ai--undergraduate-181717?style=flat-square&logo=github)](https://github.com/asem-sharif-ai/ai-undergraduate)
+[`github.com/asem-sharif-ai/YTFetcherPlus`](https://github.com/asem-sharif-ai/YTFetcherPlus)
 
 ---
 
-<!-- ── [ADD NEW PROJECTS BELOW THIS LINE] ─────────────────
+<!-- ── Undergraduate Portfolio ─────────────────────────────────────────────── -->
+
+### Undergraduate AI & CS Portfolio
+`Academic · 2022 – 2025`
+
+A collection of projects spanning the four-year undergraduate program. Selected highlights:
+
+**Machine Learning No-Code App** — A desktop interface that exposes a full ML pipeline (data loading, preprocessing, model selection, training, evaluation) without requiring the user to write any code. Built to make classical ML workflows accessible and inspectable.
+
+**Deep Learning Hand Gesture Recognition** — Real-time hand gesture classification using a deep learning pipeline on top of MediaPipe landmark extraction. Designed for low-latency inference on CPU.
+
+Additional projects cover classical algorithms, image processing, cryptography tooling, and GUI applications developed across coursework.
+
+[`github.com/asem-sharif-ai/ai-undergraduate`](https://github.com/asem-sharif-ai/ai-undergraduate)
+
+---
+
+<!-- ── [ADD NEW PROJECT BLOCKS ABOVE THIS LINE] ──────────────────────────────
      Template:
-     ### 🔧 Project Title
-     *Year*
-     Brief one-paragraph description.
-     **Stack:** `tool1` · `tool2`
-     [![Repo](...)](...) 
+     ### Project Title
+     `Category · Year`
+     One paragraph description.
+     **Stack:** ...
+     [`repo link`](url)
      ---
-     ──────────────────────────────────────────────────── -->
+     ─────────────────────────────────────────────────────────────────────────── -->
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 5 · EXPERIENCE
-     To add a role: copy one experience block and edit it.
-     Each block is self-contained.
-     ═══════════════════════════════════════════════════════════ -->
+## Experience
 
-## `§05` &nbsp; Experience
+<!-- To add a role: copy one block below and edit it. Each block is self-contained. -->
 
-<!-- ── Role: Junior AI Developer ──────────────────────────── -->
-**Junior AI Developer · Research Assistant** &nbsp;|&nbsp; *Freelance* &nbsp;`2024 – Present`
+**Junior AI Developer / Research Assistant** — Freelance `2024 – Present`  
+End-to-end ML workflows: model evaluation with domain-appropriate metrics, iterative tuning on real-world datasets, and systematic hyperparameter optimization for accuracy and generalization.
 
-Contributed to end-to-end machine learning workflows: model evaluation with domain-appropriate metrics, iterative fine-tuning on real-world datasets, and systematic hyperparameter optimization for robustness and generalization.
+**Instructor** — Digital Egypt Cubs Initiative (DECI) `2025`  
+Delivered foundational computer science and digital technology sessions for youth audiences as part of the national DECI initiative, powered by Udacity and CLS. Designed small applied exercises to bridge theory and practice.
 
 ---
 
-<!-- ── Role: Instructor at DECI ───────────────────────────── -->
-**Instructor** &nbsp;|&nbsp; *Digital Egypt Cubs Initiative (DECI)* &nbsp;`2025`
+## Education
 
-Delivered interactive sessions on foundational computer science and digital technology concepts — hardware, software, and internet safety — for youth audiences. Contributed to the national DECI initiative, powered by Udacity and CLS, aimed at expanding digital literacy across Egypt.
+**Faculty of Artificial Intelligence — Menoufia University** `Oct 2022 – Aug 2026`  
+B.Sc. in Artificial Intelligence · Cyber Security Department  
+GPA: 3.55 / 4.0 (A — Excellent Standing) · 120 Credit Hours
 
----
-
-<!-- ── [ADD NEW ROLES BELOW THIS LINE] ────────────────────
-     Template:
-     **Role Title** | *Organization* `Year`
-     Short description paragraph.
-     ---
-     ──────────────────────────────────────────────────── -->
+Coursework: Mathematics, Programming, Software Engineering, Machine Learning, Deep Learning, Computer Vision, Data Analysis, Cryptography, Secure Software Development, Network Security
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 6 · EDUCATION
-     To update: edit the details below. Structure is fixed.
-     ═══════════════════════════════════════════════════════════ -->
+## Currently
 
-## `§06` &nbsp; Education
-
-🎓 **Faculty of Artificial Intelligence — Menoufia University** &nbsp;`Oct 2022 – Aug 2026`
-
-- **Degree:** B.Sc. in Artificial Intelligence · Cyber Security Department
-- **GPA:** 3.55 / 4.0 &nbsp;*(A — Excellent Standing)*
-- **Credit Hours:** 120
-- **Coursework focus:** Mathematics · Programming · Software Engineering · Machine Learning · Deep Learning · Computer Vision · Data Analysis · Cryptography · Secure Software Development · Network Security
+Working on final delivery and documentation of Lynx DMS.  
+Deepening C++ knowledge for edge inference pipelines.  
+Exploring postgraduate research paths in AI and Computer Vision.
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     § 7 · CURRENTLY / INTERESTS
-     To update: freely edit the lists below.
-     ═══════════════════════════════════════════════════════════ -->
+## Contact
 
-## `§07` &nbsp; Currently
-
-```python
-status = {
-    "working_on"  : "LYNX DMS — graduation project delivery",
-    "learning"    : ["C++ for edge inference", "Hailo SDK internals", "TensorRT optimization"],
-    "interested_in": ["Embedded AI", "Edge deployment pipelines", "3D printing & hardware design"],
-    "next"        : "Postgraduate research in AI / Computer Vision",
-}
-```
-
----
-
-<!-- ═══════════════════════════════════════════════════════════
-     § 8 · GITHUB STATS
-     These auto-update. Only change the username if needed.
-     ═══════════════════════════════════════════════════════════ -->
-
-## `§08` &nbsp; GitHub Stats
-
-<div align="center">
-
-![Asem's GitHub Stats](https://github-readme-stats.vercel.app/api?username=asem-sharif-ai&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=asem-sharif-ai&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9)
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════
-     § 9 · CONTACT
-     To update: edit the contact details below.
-     ═══════════════════════════════════════════════════════════ -->
-
-## `§09` &nbsp; Contact
-
-| | |
-|:---|:---|
-| 📧 Email | [asem.sharif.ai@gmail.com](mailto:asem.sharif.ai@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/asem-sharif](https://linkedin.com/in/asem-sharif) |
-| 🐙 GitHub | [github.com/asem-sharif-ai](https://github.com/asem-sharif-ai) |
-| 📞 Phone | +20 101 005 7162 |
-
----
-
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER — do not edit
-     ═══════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-*"Build things that work. Make them fast. Keep them honest."*
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=asem-sharif-ai.asem-sharif-ai&style=flat-square)
-
-</div>
+Email: asem.sharif.ai@gmail.com  
+LinkedIn: linkedin.com/in/asem-sharif  
+GitHub: github.com/asem-sharif-ai  
+Phone: +20 101 005 7162
